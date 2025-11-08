@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>César Villa — Portfolio</title>
+  <meta name="description" content="Portfolio of César Villa — projects in fluids, aeronautics and aerospace." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="avatar" src="assets/images/avatar.jpg" alt="Portrait of César Villa">
+        <div>
+          <h1 class="title">César Villa</h1>
+          <p class="subtitle">Mechanical Engineering — Fluids · Aeronautics · Aerospace</p>
+          <p class="mini muted">Originally from Tahiti; resilient, adaptable, and curious about the physics of flows.</p>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="mailto:cesarhanakea.villa@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/cesarhanakea/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="CV-CesarVilla.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <h2>Selected Projects</h2>
+      <p class="muted">Hands-on and simulation work across fluid mechanics, sensing and data analysis. Click a card for a code repo, a short demo, or a PDF report.</p>
+    </section>
+
+    <section class="container grid">
+      <!-- Duplicate these <article> blocks to add projects -->
+      <article class="card">
+        <a class="thumb" href="#" target="_blank" rel="noreferrer">
+          <img src="assets/images/porous-drop.jpg" alt="Porous object falling in viscous fluid">
+        </a>
+        <div class="content">
+          <h3>Porous Object Fall in Viscous Fluid</h3>
+          <p class="muted">Tracking + analysis to characterize dynamics (LFMI, EPFL).</p>
+          <div class="tags">
+            <span>Python</span><span>CV/Tracking</span><span>Fluids</span>
+          </div>
+          <div class="actions">
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="#" target="_blank" rel="noreferrer">
+          <img src="assets/images/openfoam.jpg" alt="Wind load simulation in OpenFOAM">
+        </a>
+        <div class="content">
+          <h3>Wind Load Simulation (OpenFOAM)</h3>
+          <p class="muted">Setups and internal tutorials for knowledge sharing (AIS, Hong Kong).</p>
+          <div class="tags">
+            <span>CFD</span><span>OpenFOAM</span>
+          </div>
+          <div class="actions">
+            <a href="#" target="_blank" rel="noreferrer">Notes</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="#" target="_blank" rel="noreferrer">
+          <img src="assets/images/raspberry-gripper.jpg" alt="Automatic raspberry gripper">
+        </a>
+        <div class="content">
+          <h3>Automatic Raspberry Gripper</h3>
+          <p class="muted">Sensor fusion + control to pick ripe fruit; quick prototype.</p>
+          <div class="tags">
+            <span>Arduino</span><span>Sensors</span>
+          </div>
+          <div class="actions">
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="thumb" href="#" target="_blank" rel="noreferrer">
+          <img src="assets/images/boat-oscillation.jpg" alt="Boat oscillation experiment">
+        </a>
+        <div class="content">
+          <h3>Boat Oscillation Experiment</h3>
+          <p class="muted">Measuring and analyzing oscillatory behavior using multiple sensors.</p>
+          <div class="tags">
+            <span>DAQ</span><span>Signal Processing</span>
+          </div>
+          <div class="actions">
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container about">
+      <h2>About</h2>
+      <p class="muted">
+        Originally from Tahiti, inspired by the ocean and competitive sailing in an environment connected to fluids.
+        Resilient in the face of challenges and adaptable to sudden changes, guided by strong determination. Keen to work
+        in fluid mechanics, aeronautics, and aerospace. Also passionate about meteorology and astronomy.
+      </p>
+    </section>
+
+    <section class="container contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:cesarhanakea.villa@gmail.com">cesarhanakea.villa@gmail.com</a> ·
+         <a href="https://www.linkedin.com/in/cesarhanakea/">linkedin.com/in/cesarhanakea</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> César Villa</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
