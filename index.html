@@ -5,11 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>César Villa — Portfolio</title>
   <meta name="description" content="Portfolio of César Villa — projects in fluids, aeronautics and aerospace." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== FORCE SAME IMAGE SIZE FOR ALL PROJECT CARDS ===== -->
+  <style>
+    .card .thumb {
+      display: block;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .card .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -28,83 +47,76 @@
       </nav>
     </div>
   </header>
-          
 
   <main>
     <section class="container hero">
       <h2>Selected Projects</h2>
-      <p class="muted">Hands-on and simulation work across fluid mechanics, sensing and data analysis. Click a card for a PDF report.</p>
+      <p class="muted">
+        Hands-on and simulation work across fluid mechanics, sensing and data analysis.
+        Click a card for a PDF report.
+      </p>
     </section>
-    
 
     <section class="container grid">
-      <!-- Duplicate these <article> blocks to add projects -->
-
 
       <!-- ===== RECENT PROJECT 1 ===== -->
-<article class="card">
-  <a class="thumb" href="Microbubble_dynamic_Villa_César.pdf" target="_blank" rel="noreferrer">
-    <img src="bulle.png" alt="Recent project report">
-  </a>
-  <div class="content">
-    <h3>Ultrasonnicaly-Driven lipid-coated microbubble dynamics</h3>
-    <p class="muted">
-      Track and modelise the motion of a microbubble with Rayleigh-Plesset
-    </p>
-    <div class="tags">
-      <span>MATLAB</span><span>Cavitation</span>
-    </div>
-    <div class="actions">
-      <a href="Microbubble_dynamic_Villa_César.pdf" target="_blank" rel="noreferrer">Report</a>
-    </div>
-  </div>
-</article>
+      <article class="card">
+        <a class="thumb" href="Microbubble_dynamic_Villa_César.pdf" target="_blank" rel="noreferrer">
+          <img src="bulle.png" alt="Ultrasonically driven microbubble dynamics">
+        </a>
+        <div class="content">
+          <h3>Ultrasonnicaly-Driven lipid-coated microbubble dynamics</h3>
+          <p class="muted">Track and modelise the motion of a microbubble with Rayleigh-Plesset</p>
+          <div class="tags">
+            <span>MATLAB</span><span>Cavitation</span>
+          </div>
+          <div class="actions">
+            <a href="Microbubble_dynamic_Villa_César.pdf" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </div>
+      </article>
 
-<!-- ===== RECENT PROJECT 2 ===== -->
-<article class="card">
-  <a class="thumb" href="Imaging_3.pdf" target="_blank" rel="noreferrer">
-    <img src="trace_0.01.png" alt="Recent project report">
-  </a>
-  <div class="content">
-    <h3>Imaging in Fluid Dynamics: PTV</h3>
-    <p class="muted">
-      Compare the diffences between PIV and PTV
-    </p>
-    <div class="tags">
-      <span>MATLAB</span><span>PTV</span>
-    </div>
-    <div class="actions">
-      <a href="Imaging_3.pdf" target="_blank" rel="noreferrer">Report</a>
-    </div>
-  </div>
-</article>
+      <!-- ===== RECENT PROJECT 2 ===== -->
+      <article class="card">
+        <a class="thumb" href="Imaging_3.pdf" target="_blank" rel="noreferrer">
+          <img src="trace_0.01.png" alt="PTV imaging">
+        </a>
+        <div class="content">
+          <h3>Imaging in Fluid Dynamics: PTV</h3>
+          <p class="muted">Compare the diffences between PIV and PTV</p>
+          <div class="tags">
+            <span>MATLAB</span><span>PTV</span>
+          </div>
+          <div class="actions">
+            <a href="Imaging_3.pdf" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </div>
+      </article>
 
-<!-- ===== RECENT PROJECT 3 ===== -->
-<article class="card">
-  <a class="thumb" href="César_Villa_Imaging_2.pdf" target="_blank" rel="noreferrer">
-    <img src="vort_0.25_001.png" alt="Recent project report">
-  </a>
-  <div class="content">
-    <h3>Imaging in Fluid Dynamics: PIV</h3>
-    <p class="muted">
-      Study the fluid motion in Q2D flow with PIV 
-    </p>
-    <div class="tags">
-      <span>MATLAB</span><span>PIV</span><span>PIVlab</span>
-    </div>
-    <div class="actions">
-      <a href="César_Villa_Imaging_2.pdf" target="_blank" rel="noreferrer">Report</a>
-    </div>
-  </div>
-</article>
+      <!-- ===== RECENT PROJECT 3 ===== -->
+      <article class="card">
+        <a class="thumb" href="César_Villa_Imaging_2.pdf" target="_blank" rel="noreferrer">
+          <img src="vort_0.25_001.png" alt="PIV imaging">
+        </a>
+        <div class="content">
+          <h3>Imaging in Fluid Dynamics: PIV</h3>
+          <p class="muted">Study the fluid motion in Q2D flow with PIV</p>
+          <div class="tags">
+            <span>MATLAB</span><span>PIV</span><span>PIVlab</span>
+          </div>
+          <div class="actions">
+            <a href="César_Villa_Imaging_2.pdf" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </div>
+      </article>
 
       <article class="card">
         <a class="thumb" href="César_Villa_Imaging_1.pdf" target="_blank" rel="noreferrer">
-          <img src="street.png" alt="Boat oscillation experiment">
+          <img src="street.png" alt="Vortex visualization">
         </a>
         <div class="content">
-          <h3> Imaging in Fluid Dynamics: Vortex Visualization </h3>
-          <p class="muted"> Studying of the differents method of tracking and visualization of fluid motion. </p>
+          <h3>Imaging in Fluid Dynamics: Vortex Visualization</h3>
+          <p class="muted">Studying of the differents method of tracking and visualization of fluid motion.</p>
           <div class="tags">
             <span>MATLAB</span>
           </div>
@@ -114,11 +126,9 @@
         </div>
       </article>
 
-
-    
       <article class="card">
         <a class="thumb" href="Rapport_PDB.pdf" target="_blank" rel="noreferrer">
-          <img src="disq.png" alt="Porous object falling in viscous fluid">
+          <img src="disq.png" alt="Porous disk fall">
         </a>
         <div class="content">
           <h3>Porous Disq Fall in Viscous Fluid</h3>
@@ -134,10 +144,10 @@
 
       <article class="card">
         <a class="thumb" href="soupape_moteur.pdf" target="_blank" rel="noreferrer">
-          <img src="soupapem.png" alt="Wind load simulation in OpenFOAM">
+          <img src="soupapem.png" alt="Engine valve FEM">
         </a>
         <div class="content">
-          <h3> Engine valve (FEM) </h3>
+          <h3>Engine valve (FEM)</h3>
           <p class="muted">Analysis of the different load and stress factor with Abaqus.</p>
           <div class="tags">
             <span>FEM</span><span>ABAQUS</span>
@@ -150,7 +160,7 @@
 
       <article class="card">
         <a class="thumb" href="Engineering_Drawings_Group22.pdf" target="_blank" rel="noreferrer">
-          <img src="gripper.png" alt="Automatic raspberry gripper">
+          <img src="gripper.png" alt="Raspberry gripper">
         </a>
         <div class="content">
           <h3>Automatic Raspberry Gripper</h3>
@@ -166,7 +176,7 @@
 
       <article class="card">
         <a class="thumb" href="Measurement_Technique.pdf" target="_blank" rel="noreferrer">
-          <img src="boat-oscillation.jpg" alt="Boat oscillation experiment">
+          <img src="boat-oscillation.jpg" alt="Measurement techniques">
         </a>
         <div class="content">
           <h3>Measurement Technics</h3>
@@ -180,13 +190,13 @@
         </div>
       </article>
 
-    <article class="card">
+      <article class="card">
         <a class="thumb" href="Projet_Sudoku.pdf" target="_blank" rel="noreferrer">
-          <img src="boat-oscillation.jpg" alt="Boat oscillation experiment">
+          <img src="boat-oscillation.jpg" alt="Sudoku solver">
         </a>
         <div class="content">
-          <h3> Sudoku Solver</h3>
-          <p class="muted"> Writting a code to solve automaticaly any sudoku from a picture </p>
+          <h3>Sudoku Solver</h3>
+          <p class="muted">Writting a code to solve automaticaly any sudoku from a picture</p>
           <div class="tags">
             <span>MATLAB</span><span>Labview</span><span>C</span>
           </div>
@@ -195,21 +205,28 @@
           </div>
         </div>
       </article>
+
     </section>
 
     <section class="container about">
       <h2>About</h2>
       <p class="muted">
-        Born in Tahiti on January 13th, 2002, I grew up close to the ocean, sailing from the age of five and learning violin at seven. I enjoy fishing, surfing, and hiking, and I have competed in three sailing world championships, with a best result of 4th place, as well as seven international championships. These experiences taught me discipline, resilience, cultural openness, and how to manage preparation and logistics at a high level.
-
-In parallel, four years in an orchestra strengthened my sense of organization and consistency, as I balanced music practice with school. All these experiences shaped my curiosity and pushed me toward engineering, where I now explore fluid mechanics, aeronautics, and aerospace.
+        Born in Tahiti on January 13th, 2002, I grew up close to the ocean, sailing from the age of five and learning violin at seven.
+        I enjoy fishing, surfing, and hiking, and I have competed in three sailing world championships, with a best result of 4th place,
+        as well as seven international championships. These experiences taught me discipline, resilience, cultural openness,
+        and how to manage preparation and logistics at a high level.
+        <br><br>
+        In parallel, four years in an orchestra strengthened my sense of organization and consistency, as I balanced music practice
+        with school. All these experiences shaped my curiosity and pushed me toward engineering, where I now explore fluid mechanics,
+        aeronautics, and aerospace.
       </p>
     </section>
 
     <section class="container contact">
       <h2>Contact</h2>
-      <p><a href="mailto:cesarhanakea.villa@gmail.com">cesarhanakea.villa@gmail.com</a> ·
-         <a href="https://www.linkedin.com/in/cesarhanakea/">linkedin.com/in/cesarhanakea</a>
+      <p>
+        <a href="mailto:cesarhanakea.villa@gmail.com">cesarhanakea.villa@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/cesarhanakea/">linkedin.com/in/cesarhanakea</a>
       </p>
     </section>
   </main>
@@ -218,6 +235,9 @@ In parallel, four years in an orchestra strengthened my sense of organization an
     <div class="container">© <span id="y"></span> César Villa</div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
